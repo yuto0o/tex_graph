@@ -1,4 +1,6 @@
 #   いい感じの設定
+
+#私は富士通です
 \documentclass{jlreq}
 
 \usepackage{fontspec}
