@@ -1,27 +1,22 @@
 \documentclass{jlreq}
-\usepackage{pgfplots}
+
 \usepackage{fontspec}
 \usepackage{unicode-math}
-% \usepackage[utf8]{inputenc} % 明示してみる（ただし LuaLaTeX では通常不要）
-\usepackage{pgfplotstable}  % 書き込み処理の安定化
-
 \setmainfont{Latin Modern Roman}
 \setmathfont{Latin Modern Math}
-% 日本語フォント設定：luatexja の方法
-\usepackage[haranoaji]{luatexja-preset} % ← HaranoAjiフォントの設定が一括で済む！
-\usepackage{luatexja-fontspec}
-\setmainjfont[BoldFont={HaranoAji Mincho Bold}]{HaranoAji Mincho}
+\usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \usepgfplotslibrary{statistics}
 
 \begin{document}
 
+これはテストです。English and math: \( \frac{\sin r}{r} \)
 
 \begin{tikzpicture}
 \begin{axis}[
-    title=Example using the mesh parameter,
-    hide axis,
+    title=グラフタイトル,
     colormap/cool,
+    hide axis,
 ]
 \addplot3[
     mesh,
@@ -29,48 +24,7 @@
     domain=-8:8,
 ]
 {sin(deg(sqrt(x^2+y^2)))/sqrt(x^2+y^2)};
-\addlegendentry{\(\frac{sin(r)}{r}\)}
-\end{axis}
-\end{tikzpicture}
-
-
-\begin{tikzpicture}
-\begin{axis}
-\addplot3[
-    surf,
-]
-coordinates {
-(0,0,0) (0,1,0) (0,2,0)
-
-(1,0,0) (1,1,0.6) (1,2,0.7)
-
-(2,0,0) (2,1,0.7) (2,2,1.8)
-};
-\end{axis}
-\end{tikzpicture}
-
-\begin{tikzpicture}
-\begin{axis}[
-title=Axis wide color mapping,
-colorbar,
-samples=50,point meta rel=axis wide,
-point meta=y,
-]
-\addplot [mesh,thick] {sin(deg(x))};
-\addplot [mesh,thick] {3*tanh(x)};
-\end{axis}
-\end{tikzpicture}
-
-
-\begin{tikzpicture}
-\begin{axis}[
-axis background/.style={fill=blue!10},
-]
-\addplot3 [
-surf,
-y domain=0:1,
-]
-{sin(deg(x)) * y*(1-y)};
+\addlegendentry{$\frac{\sin r}{r}$}
 \end{axis}
 \end{tikzpicture}
 
@@ -88,9 +42,6 @@ x
 );
 \end{axis}
 \end{tikzpicture}
-
-
-
 
 \begin{tikzpicture}
 \begin{axis}
