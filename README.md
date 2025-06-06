@@ -1,4 +1,6 @@
 #   いい感じの設定
+
+#この変更はいずれ消す
 \documentclass{jlreq}
 
 \usepackage{fontspec}
