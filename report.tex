@@ -1,5 +1,16 @@
 \documentclass{jlreq}
 \usepackage{pgfplots}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+% \usepackage[utf8]{inputenc} % 明示してみる（ただし LuaLaTeX では通常不要）
+\usepackage{pgfplotstable}  % 書き込み処理の安定化
+
+\setmainfont{Latin Modern Roman}
+\setmathfont{Latin Modern Math}
+% 日本語フォント設定：luatexja の方法
+\usepackage[haranoaji]{luatexja-preset} % ← HaranoAjiフォントの設定が一括で済む！
+\usepackage{luatexja-fontspec}
+\setmainjfont[BoldFont={HaranoAji Mincho Bold}]{HaranoAji Mincho}
 \pgfplotsset{compat=1.18}
 \usepgfplotslibrary{statistics}
 
