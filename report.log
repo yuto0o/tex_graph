@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.6.28)  7 JUN 2025 03:15
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.6.28)  8 JUN 2025 01:00
  restricted system commands enabled.
 **"c:/Users/ynato/OneDrive - Kyoto University/添付ファイル/講義など/2回前期/tex_try/report_git/tex_graph/report"
 ("c:/Users/ynato/OneDrive - Kyoto University/添付ファイル/講義など/2回前期/tex_try/report_git/tex_graph/report.tex"
@@ -1130,7 +1130,7 @@ Here is how much of LuaTeX's memory you used:
    11 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 225 attribute, 49 glue_spec, 32 attribute_list, 2 write, 14 user_defined nodes
    avail lists: 1:54,2:640539,3:102579,4:536,5:36,6:8,7:3520,8:9,9:506,11:2
  56484 multiletter control sequences out of 65536+600000
- 67 fonts using 41214495 bytes
+ 67 fonts using 41214539 bytes
  107i,17n,102p,1950b,2645s stack positions out of 10000i,1000n,20000p,1001793b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2024/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
 Output written on report.pdf (1 page, 205682 bytes).
