@@ -11,7 +11,21 @@
 \begin{document}
 
 これはテストです。English and math: \( \frac{\sin r}{r} \)
-
+ガウス関数の導出をします。
+\begin{align*}
+f(x) &= \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}} \\
+\int_{-\infty}^{\infty} f(x) \, dx &= \int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}} \, dx \\
+&= \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{-\frac{x^2}{2}} \, dx \\
+&= \frac{1}{\sqrt{2\pi}} \cdot \sqrt{2\pi} \\
+&= 1
+\end{align*}
+複素数の積分を考えます。
+\begin{align*}
+\int_{-\infty}^{\infty} e^{ix} \, dx &= \lim_{R \to \infty} \int_{-R}^{R} e^{ix} \, dx \\
+&= \lim_{R \to \infty} \left[ \frac{e^{ix}}{i} \right]_{-R}^{R} \\
+&= \lim_{R \to \infty} \left( \frac{e^{iR}}{i} - \frac{e^{-iR}}{i} \right) \\
+&= \lim_{R \to \infty} \left( \frac{\cos R + i \sin R}{i} - \frac{\cos R - i \sin R}{i} \right) \\      
+\end{align*}            
 \begin{tikzpicture}
 \begin{axis}[
     title=グラフタイトル,
