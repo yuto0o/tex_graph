@@ -1,5 +1,7 @@
-#   いい感じの設定
+# いい感じの設定
+
 \documentclass{jlreq}
+
 ```
 \usepackage{fontspec}
 \usepackage{unicode-math}
@@ -11,11 +13,12 @@
 ```
 
 # latex.json
+
 ```
 {
-	// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
 	// Example:
 	// "Print to console": {
@@ -78,6 +81,31 @@
         ],
         "description": "授業レポート用テンプレート"
     },
+    "ltjt 横長縦組み": {
+		"prefix": "ltjtlandscape",
+		"body": [
+			"\\documentclass[11pt]{ltjtarticle} % 縦組み用クラス",
+			"",
+			"\\usepackage[landscape,a4paper,top=20mm,bottom=20mm,left=20mm,right=20mm]{geometry} % 横長設定",
+			"",
+			"\\usepackage{atbegshi} % 回転用",
+			"\\AtBeginShipout{\\special{landscape}} % PDFの表示方向を回転",
+			"",
+			"\\title{${1:はじめての横長縦組み}}",
+			"\\author{${2:おなまえ}}",
+			"",
+			"\\begin{document}",
+			"\\maketitle",
+			"",
+			"吾輩は猫である。年齢は\\hbox{\\yoko ${3:10}}歳。",
+			"猫としてはそこそこ高齢であるが、おじいちゃんでもない。",
+			"言い忘れていたが、オスである。",
+			"ただ、去勢手術を受けているので、発情もない。",
+			"",
+			"\\end{document}"
+		],
+		"description": "ltjtarticle を使った横長縦組みドキュメントのテンプレート"
+	},
 
     "Figure Environment": {
     "prefix": "fig",
@@ -110,7 +138,7 @@
     ],
     "description": "Insert a table environment with centering, caption, and label"
   },
-  
+
     "Section": {
         "prefix": "sec",
         "body": [
@@ -197,7 +225,7 @@
             "\\end{thebibliography}"
         ],
         "description": "Insert a bibliography environment"
-    },  
+    },
     "Footnote": {
         "prefix": "footnote",
         "body": [
@@ -271,7 +299,7 @@
             "\\end{quote}"
         ],
         "description": "Insert a quote environment"
-    },  
+    },
     "Verbatim Environment": {
         "prefix": "verbatim",
         "body": [
@@ -302,10 +330,10 @@
         ],
         "description": "Insert common math symbols"
     },
-    
 
 
 
-    
+
+
 }
 ```

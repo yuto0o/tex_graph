@@ -1,0 +1,19 @@
+\documentclass[11pt]{ltjtarticle} % 縦組み用クラス
+
+\usepackage[landscape,a4paper,top=20mm,bottom=20mm,left=20mm,right=20mm]{geometry} % 横長設定
+
+\usepackage{atbegshi} % 回転用
+\AtBeginShipout{\special{landscape}} % PDFの表示方向を回転
+
+\title{はじめての横長縦組み}
+\author{おなまえ}
+
+\begin{document}
+\maketitle
+
+吾輩は猫である。年齢は\hbox{\yoko 10}歳。
+猫としてはそこそこ高齢であるが、おじいちゃんでもない。
+言い忘れていたが、オスである。
+ただ、去勢手術を受けているので、発情もない。
+
+\end{document}
