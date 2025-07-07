@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.5.7)  23 JUN 2025 17:37
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.5.7)  7 JUL 2025 18:53
  restricted system commands enabled.
 **report.tex
 (./report.tex
@@ -1365,11 +1365,11 @@ L3 programming layer <2024-01-22>
 
 Here is how much of LuaTeX's memory you used:
  34595 strings out of 476553
- 1822637,4101490 words of node,token memory allocated
+ 1822639,4101490 words of node,token memory allocated
  1173 words of node memory still in use:
    12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 249 attribute, 49 glue_sp
 ec, 35 attribute_list, 2 write, 15 user_defined nodes
-   avail lists: 1:49,2:644638,3:88577,4:595,5:222,6:7,7:4042,8:44,9:1084,11:2
+   avail lists: 1:43,2:644760,3:88583,4:595,5:226,6:7,7:4052,8:44,9:1084,11:2
  55782 multiletter control sequences out of 65536+600000
  67 fonts using 41214495 bytes
  107i,18n,102p,1731b,2645s stack positions out of 10000i,1000n,20000p,1001684b,200000s
@@ -1380,7 +1380,7 @@ e/public/lm-math/latinmodern-math.otf></usr/share/texmf/fonts/opentype/public/lm
 modern-math.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman7-regular.otf>
 </usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/tex
 live/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
-Output written on report.pdf (2 pages, 218921 bytes).
+Output written on report.pdf (2 pages, 219139 bytes).
 
 PDF statistics: 70 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
