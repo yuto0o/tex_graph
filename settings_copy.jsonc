@@ -1,0 +1,109 @@
+{
+  // 一般設定
+  "editor.formatOnSave": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+
+  "latex-workshop.formatting.latex": "latexindent",
+
+  "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
+
+  // LaTeX Workshop 設定
+  "latex-workshop.intellisense.package.enabled": true,
+  "latex-workshop.view.pdf.viewer": "tab",
+  // "latex-workshop.latex.outDir": ".tex_temp",  // 出力ディレクトリを指定
+  "latex-workshop.latex.outDir": "./", // PDF 出力を .tex と同じ場所に
+
+  "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
+  "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.latex.recipe.default": "latexmk (build & clean)",
+
+  // レシピ（ビルド後に中間ファイルを削除）
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (build & clean)",
+      "tools": ["latexmk-build", "latexmk-clean"]
+    }
+  ],
+
+  // ビルド＆クリーン用ツール定義
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk-build",
+      "command": "wsl.exe",
+      "args": ["latexmk", "-lualatex", "-time", "%DOCFILE%.tex"]
+    },
+    {
+      "name": "latexmk-clean",
+      "command": "wsl.exe",
+      "args": ["sh", "-c", "find .tex_temp -type f ! -name '*.log' -delete"]
+    }
+  ],
+
+  // LaTeX エディタ設定
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
+
+    "editor.wordWrap": "on",
+    "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?゠・，、；：！？．。‘’“”（）｟｠［］〚〛〔〕｛｝〈〉《》「」『』【】〖〗〝〟がてでとにのはへもやを",
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.language.colorizedBracketPairs": [
+      ["‘", "’"],
+      ["“", "”"],
+      ["(", ")"],
+      ["（", "）"],
+      ["｟", "｠"],
+      ["[", "]"],
+      ["［", "］"],
+      ["〚", "〛"],
+      ["〔", "〕"],
+      ["{", "}"],
+      ["｛", "｝"],
+      ["〈", "〉"],
+      ["《", "》"],
+      ["「", "」"],
+      ["『", "』"],
+      ["【", "】"],
+      ["〖", "〗"],
+      ["〝", "〟"]
+    ],
+    "editor.unicodeHighlight.ambiguousCharacters": true,
+    "editor.unicodeHighlight.allowedCharacters": {
+      "゠": true,
+      "，": true,
+      "；": true,
+      "：": true,
+      "！": true,
+      "？": true,
+      "．": true,
+      "‘": true,
+      "’": true,
+      "（": true,
+      "）": true,
+      "［": true,
+      "］": true,
+      "｛": true,
+      "｝": true,
+      "〔": true,
+      "〕": true,
+      "＜": true,
+      "＞": true,
+      "ノ": true
+    }
+  }
+}
