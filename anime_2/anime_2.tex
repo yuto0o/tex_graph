@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{animate}
+\usepackage{ifthen}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage[margin=2cm]{geometry}
+
+\begin{document}
+
+\begin{center}
+    \begin{animateinline}[poster=first,controls,buttonsize=1em]{12} % 12fps
+        \multiframe{40}{i=0+1}{ % フレーム数:40, iは0から1ずつ増加
+            \begin{tikzpicture}[scale=1]
+                \draw[->] (-2,0) -- (6,0) node[right] {$x$};
+                \draw[->] (0,-1.5) -- (0,2) node[above] {$y$};
+
+                \pgfmathsetmacro{\a}{\i*0.2}
+                \draw[thick,domain=0:6,smooth,variable=\x,blue] plot ({\x},{sin(deg(\x-\a))});
+
+                \node at (4.5,1.5) {\small $\sin(x - \alpha)$, $\alpha=\a$};
+            \end{tikzpicture}
+        }
+    \end{animateinline}
+\end{center}
+
+\end{document}
