@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{animate}
+\usepackage{amsmath}
+\usepackage[margin=1.5cm]{geometry}
+
+\begin{document}
+\begin{center}
+    \begin{animateinline}[poster=first,controls,buttonsize=1em]{12} % 12 fps
+        \multiframe{60}{i=0+1}{
+            \begin{tikzpicture}[scale=0.9]
+                \draw[->] (-0.5,0) -- (7,0) node[right] {$x$};
+                \draw[->] (0,-2.5) -- (0,2.5) node[above] {$y$};
+
+                % パラメータ（単位: ラジアン）
+                \def\kone{2*pi/1.0}   % k₁: 主波（速く）
+                \def\wone{2*pi/0.5}   % ω₁
+
+                \def\ktwo{2*pi/6.0}   % k₂: 包絡（遅く）
+                \def\wtwo{2*pi/8.0}   % ω₂
+
+                \pgfmathsetmacro\t{\i*0.1} % 時間 t
+
+                % y = sin(k₁x - ω₁t) * cos(k₂x - ω₂t)
+                \draw[purple, thick, domain=0:6.5, samples=300, smooth, variable=\x]
+                plot (\x, {sin(deg(\kone*\x - \wone*\t)) * cos(deg(\ktwo*\x - \wtwo*\t))});
+
+                % ラベル
+                \node[purple] at (6.3,1.8) {\scriptsize $y = \sin(k_1 x - \omega_1 t) \cos(k_2 x - \omega_2 t)$};
+                \node at (3,-2.2) {\scriptsize wave};
+            \end{tikzpicture}
+        }
+    \end{animateinline}
+\end{center}
+\end{document}

@@ -1,7 +1,7 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.5.7)  16 JUL 2025 15:02
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.5.7)  16 JUL 2025 16:39
  restricted system commands enabled.
-**anime_2.tex
-(./anime_2.tex
+**hanabi.tex
+(./hanabi.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
@@ -58,13 +58,39 @@ f-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
 \belowcaptionskip=\skip49
 \bibindent=\dimen139
 )
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
+\Gm@bindingoffset=\dimen140
+\Gm@wd@mp=\dimen141
+\Gm@odd@mp=\dimen142
+\Gm@even@mp=\dimen143
+\Gm@layoutwidth=\dimen144
+\Gm@layoutheight=\dimen145
+\Gm@layouthoffset=\dimen146
+\Gm@layoutvoffset=\dimen147
+\Gm@dimlist=\toks18
+)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks17
-\pgfutil@tempdima=\dimen140
-\pgfutil@tempdimb=\dimen141
+\pgfutil@everybye=\toks19
+\pgfutil@tempdima=\dimen148
+\pgfutil@tempdimb=\dimen149
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box51
@@ -79,10 +105,6 @@ Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
-)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
@@ -97,41 +119,41 @@ Package graphics Info: Driver file: luatex.def on input line 107.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/luatex.def
 File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
 ))
-\Gin@req@height=\dimen142
-\Gin@req@width=\dimen143
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks19
-\pgfkeys@temptoks=\toks20
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
 .code.tex
-\pgfkeys@tmptoks=\toks21
+\pgfkeys@tmptoks=\toks22
 ))
-\pgf@x=\dimen144
-\pgf@y=\dimen145
-\pgf@xa=\dimen146
-\pgf@ya=\dimen147
-\pgf@xb=\dimen148
-\pgf@yb=\dimen149
-\pgf@xc=\dimen150
-\pgf@yc=\dimen151
-\pgf@xd=\dimen152
-\pgf@yd=\dimen153
+\pgf@x=\dimen152
+\pgf@y=\dimen153
+\pgf@xa=\dimen154
+\pgf@ya=\dimen155
+\pgf@xb=\dimen156
+\pgf@yb=\dimen157
+\pgf@xc=\dimen158
+\pgf@yc=\dimen159
+\pgf@xd=\dimen160
+\pgf@yd=\dimen161
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count193
-\c@pgf@countb=\count194
-\c@pgf@countc=\count195
-\c@pgf@countd=\count196
-\t@pgf@toka=\toks22
-\t@pgf@tokb=\toks23
-\t@pgf@tokc=\toks24
-\pgf@sys@id@count=\count197
+\c@pgf@counta=\count196
+\c@pgf@countb=\count197
+\c@pgf@countc=\count198
+\c@pgf@countd=\count199
+\t@pgf@toka=\toks23
+\t@pgf@tokb=\toks24
+\t@pgf@tokc=\toks25
+\pgf@sys@id@count=\count266
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -146,8 +168,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count198
-\pgfsyssoftpath@bigbuffer@items=\count199
+\pgfsyssoftpath@smallbuffer@items=\count267
+\pgfsyssoftpath@bigbuffer@items=\count268
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -177,12 +199,12 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen154
-\pgfmath@count=\count266
+\pgfmath@dimen=\dimen162
+\pgfmath@count=\count269
 \pgfmath@box=\box52
-\pgfmath@toks=\toks25
-\pgfmath@stack@operand=\toks26
-\pgfmath@stack@operation=\toks27
+\pgfmath@toks=\toks26
+\pgfmath@stack@operand=\toks27
+\pgfmath@stack@operation=\toks28
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -203,38 +225,38 @@ tex)
 thmetics.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count267
+\c@pgfmathroundto@lastzeros=\count270
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen155
-\pgf@picmaxx=\dimen156
-\pgf@picminy=\dimen157
-\pgf@picmaxy=\dimen158
-\pgf@pathminx=\dimen159
-\pgf@pathmaxx=\dimen160
-\pgf@pathminy=\dimen161
-\pgf@pathmaxy=\dimen162
-\pgf@xx=\dimen163
-\pgf@xy=\dimen164
-\pgf@yx=\dimen165
-\pgf@yy=\dimen166
-\pgf@zx=\dimen167
-\pgf@zy=\dimen168
+\pgf@picminx=\dimen163
+\pgf@picmaxx=\dimen164
+\pgf@picminy=\dimen165
+\pgf@picmaxy=\dimen166
+\pgf@pathminx=\dimen167
+\pgf@pathmaxx=\dimen168
+\pgf@pathminy=\dimen169
+\pgf@pathmaxy=\dimen170
+\pgf@xx=\dimen171
+\pgf@xy=\dimen172
+\pgf@yx=\dimen173
+\pgf@yy=\dimen174
+\pgf@zx=\dimen175
+\pgf@zy=\dimen176
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen169
-\pgf@path@lasty=\dimen170
+\pgf@path@lastx=\dimen177
+\pgf@path@lasty=\dimen178
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen171
-\pgf@shorten@start@additional=\dimen172
+\pgf@shorten@end@additional=\dimen179
+\pgf@shorten@start@additional=\dimen180
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
@@ -242,19 +264,19 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box53
 \pgf@hbox=\box54
 \pgf@layerbox@main=\box55
-\pgf@picture@serial@count=\count268
+\pgf@picture@serial@count=\count271
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen173
+\pgflinewidth=\dimen181
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen174
-\pgf@pt@y=\dimen175
-\pgf@pt@temp=\dimen176
+\pgf@pt@x=\dimen182
+\pgf@pt@y=\dimen183
+\pgf@pt@temp=\dimen184
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -270,13 +292,13 @@ File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen177
+\pgfarrowsep=\dimen185
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen178
-\pgf@sys@shading@range@num=\count269
-\pgf@shadingcount=\count270
+\pgf@max=\dimen186
+\pgf@sys@shading@range@num=\count272
+\pgf@shadingcount=\count273
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -310,8 +332,8 @@ File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen179
-\pgf@nodesepend=\dimen180
+\pgf@nodesepstart=\dimen187
+\pgf@nodesepend=\dimen188
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
@@ -323,10 +345,10 @@ Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen181
-\pgffor@skip=\dimen182
-\pgffor@stack=\toks28
-\pgffor@toks=\toks29
+\pgffor@iter=\dimen189
+\pgffor@skip=\dimen190
+\pgffor@stack=\toks29
+\pgffor@toks=\toks30
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
@@ -334,33 +356,33 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count271
-\pgfplotmarksize=\dimen183
+\pgf@plot@mark@count=\count274
+\pgfplotmarksize=\dimen191
 )
-\tikz@lastx=\dimen184
-\tikz@lasty=\dimen185
-\tikz@lastxsaved=\dimen186
-\tikz@lastysaved=\dimen187
-\tikz@lastmovetox=\dimen188
-\tikz@lastmovetoy=\dimen189
-\tikzleveldistance=\dimen190
-\tikzsiblingdistance=\dimen191
+\tikz@lastx=\dimen192
+\tikz@lasty=\dimen193
+\tikz@lastxsaved=\dimen194
+\tikz@lastysaved=\dimen195
+\tikz@lastmovetox=\dimen196
+\tikz@lastmovetoy=\dimen197
+\tikzleveldistance=\dimen198
+\tikzsiblingdistance=\dimen199
 \tikz@figbox=\box58
 \tikz@figbox@bg=\box59
 \tikz@tempbox=\box60
 \tikz@tempbox@bg=\box61
-\tikztreelevel=\count272
-\tikznumberofchildren=\count273
-\tikznumberofcurrentchild=\count274
-\tikz@fig@count=\count275
+\tikztreelevel=\count275
+\tikznumberofchildren=\count276
+\tikznumberofcurrentchild=\count277
+\tikz@fig@count=\count278
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count276
-\pgfmatrixcurrentcolumn=\count277
-\pgf@matrix@numberofcolumns=\count278
+\pgfmatrixcurrentrow=\count279
+\pgfmatrixcurrentcolumn=\count280
+\pgf@matrix@numberofcolumns=\count281
 )
-\tikz@expandcount=\count279
+\tikz@expandcount=\count282
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -373,23 +395,20 @@ Package: animate 2023/06/18 PDF & SVG animations from files and inline graphics
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/ifdraft.sty
 Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count280
-\calc@Bcount=\count281
-\calc@Adimen=\dimen192
-\calc@Bdimen=\dimen193
+\calc@Acount=\count283
+\calc@Bcount=\count284
+\calc@Adimen=\dimen256
+\calc@Bdimen=\dimen257
 \calc@Askip=\skip50
 \calc@Bskip=\skip51
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count282
+\calc@Ccount=\count285
 \calc@Cskip=\skip52
 )
 (/usr/share/texlive/texmf-dist/tex/latex/media9/pdfbase.sty
@@ -398,12 +417,12 @@ atures
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
 File: l3backend-luatex.def 2024-01-04 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count283
+\l__color_backend_stack_int=\count286
 Inserting `l3color' in `luaotfload.parse_color'.
 \l__pdf_internal_box=\box62
 )
-\g_pbs_page_int=\count284
-\g_pbs_oc_int=\count285
+\g_pbs_page_int=\count287
+\g_pbs_oc_int=\count288
 )
 (/usr/share/texlive/texmf-dist/tex/latex/zref/zref-abspage.sty
 Package: zref-abspage 2023-09-14 v2.35 Module abspage for zref (HO)
@@ -429,7 +448,7 @@ Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-\pdftexcmds@toks=\toks30
+\pdftexcmds@toks=\toks31
 )
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
@@ -441,223 +460,79 @@ Package zref Info: New property list: main on input line 767.
 Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
-\c@abspage=\count286
+\c@abspage=\count289
 Package zref Info: New property: abspage on input line 67.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ocgx2/ocgbase.sty
 Package: ocgbase 2022/08/04 v0.22 support package for ocgx2.sty
-\g_ocgbase_nd_int=\count287
+\g_ocgbase_nd_int=\count290
 )
 \@anim@box=\box63
 \@anim@measbox=\box64
-\@anim@tmpdima=\dimen194
-\@anim@tmpdimb=\dimen195
-\@anim@num=\count288
-\@anim@curframe=\count289
-\@anim@curframe@zb=\count290
-\@anim@resizeflags=\count291
-\@anim@skipfram=\count292
-\@anim@mulframecnt=\count293
+\@anim@tmpdima=\dimen258
+\@anim@tmpdimb=\dimen259
+\@anim@num=\count291
+\@anim@curframe=\count292
+\@anim@curframe@zb=\count293
+\@anim@resizeflags=\count294
+\@anim@skipfram=\count295
+\@anim@mulframecnt=\count296
 \@anim@@tmlnfile=\read3
-\@anim@tmpcnt=\count294
-\c@@anim@ltxcnt=\count295
-\@anim@curlayer=\count296
-\@anim@lineno=\count297
-\@anim@curfield=\count298
-\@anim@@resizeflags=\count299
+\@anim@tmpcnt=\count297
+\c@@anim@ltxcnt=\count298
+\@anim@curlayer=\count299
+\@anim@lineno=\count300
+\@anim@curfield=\count301
+\@anim@@resizeflags=\count302
 )
-(/usr/share/texmf/tex/latex/lm/lmodern.sty
-Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip53
+(./.tex_temp/hanabi.aux)
+\openout1 = hanabi.aux
 
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks31
-\ex@=\dimen196
-))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen197
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2022/04/08 v2.04 operator names
-)
-\inf@bad=\count300
-LaTeX Info: Redefining \frac on input line 236.
-\uproot@=\count301
-\leftroot@=\count302
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count303
-\DOTSCASE@=\count304
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box65
-\strutbox@=\box66
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen198
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count305
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count306
-\dotsspace@=\muskip16
-\c@parentequation=\count307
-\dspbrk@lvl=\count308
-\tag@help=\toks32
-\row@=\count309
-\column@=\count310
-\maxfields@=\count311
-\andhelp@=\toks33
-\eqnshift@=\dimen199
-\alignsep@=\dimen256
-\tagshift@=\dimen257
-\tagwidth@=\dimen258
-\totwidth@=\dimen259
-\lineht@=\dimen260
-\@envbody=\toks34
-\multlinegap=\skip54
-\multlinetaggap=\skip55
-\mathdisplay@stack=\toks35
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-)
-\Gm@cnth=\count312
-\Gm@cntv=\count313
-\c@Gm@tempcnt=\count314
-\Gm@bindingoffset=\dimen261
-\Gm@wd@mp=\dimen262
-\Gm@odd@mp=\dimen263
-\Gm@even@mp=\dimen264
-\Gm@layoutwidth=\dimen265
-\Gm@layoutheight=\dimen266
-\Gm@layouthoffset=\dimen267
-\Gm@layoutvoffset=\dimen268
-\Gm@dimlist=\toks36
-)
-(./.tex_temp/anime_2.aux)
-\openout1 = anime_2.aux
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 9
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 7
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count315
-\scratchdimen=\dimen269
-\scratchbox=\box67
-\nofMPsegments=\count316
-\nofMParguments=\count317
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count318
-\MPscratchDim=\dimen270
-\MPnumerator=\count319
-\makeMPintoPDFobject=\count320
-\everyMPtoPDFconversion=\toks38
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
 * driver: luatex
-* paper: <default>
+* paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
-* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=500.484pt
-* \textheight=681.15898pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-52.36449pt
-* \headheight=12.0pt
-* \headsep=25.0pt
+* h-part:(L,W,R)=(0.0pt, 227.62204pt, 0.0pt)
+* v-part:(T,H,B)=(0.0pt, 170.71652pt, 0.0pt)
+* \paperwidth=227.62204pt
+* \paperheight=170.71652pt
+* \textwidth=227.62204pt
+* \textheight=170.71652pt
+* \oddsidemargin=-72.26999pt
+* \evensidemargin=-72.26999pt
+* \topmargin=-72.26999pt
+* \headheight=0.0pt
+* \headsep=0.0pt
 * \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
+* \footskip=0.0pt
+* \marginparwidth=57.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -670,48 +545,32 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-3.
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-3.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count303
+\scratchdimen=\dimen260
+\scratchbox=\box65
+\nofMPsegments=\count304
+\nofMParguments=\count305
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count306
+\MPscratchDim=\dimen261
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
+\everyMPtoPDFconversion=\toks33
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
 
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-23.
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+<a0,fr0> <a0,fr1> <a0,fr2> <a0,fr3> <a0,fr4> <a0,fr5> <a0,fr6> <a0,fr7>
+<a0,fr8> <a0,fr9> <a0,fr10> <a0,fr11> <a0,fr12> <a0,fr13> <a0,fr14> [1
 
-(/usr/share/texmf/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-23.
-
-(/usr/share/texmf/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 23.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 23.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 23.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 23.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 23.
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <a0,fr0> <a0,fr1> <a0,fr2> 
-<a0,fr3> <a0,fr4> <a0,fr5> <a0,fr6>
-<a0,fr7> <a0,fr8> <a0,fr9> <a0,fr10> <a0,fr11> <a0,fr12> <a0,fr13> <a0,fr14>
-<a0,fr15> <a0,fr16> <a0,fr17> <a0,fr18> <a0,fr19> <a0,fr20> <a0,fr21>
-<a0,fr22> <a0,fr23> <a0,fr24> <a0,fr25> <a0,fr26> <a0,fr27> <a0,fr28>
-<a0,fr29> <a0,fr30> <a0,fr31> <a0,fr32> <a0,fr33> <a0,fr34> <a0,fr35>
-<a0,fr36> <a0,fr37> <a0,fr38> <a0,fr39> [1
-
-] (./.tex_temp/anime_2.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./.tex_temp/hanabi.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -719,25 +578,20 @@ L3 programming layer <2024-01-22>
 )
 
 Here is how much of LuaTeX's memory you used:
- 15392 strings out of 476553
+ 14407 strings out of 476553
  100000,1977958 words of node,token memory allocated
- 500 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 8 attribute, 53 glue_spec,
- 8 attribute_list, 2 write nodes
-   avail lists: 2:326,3:78,4:14,5:37,6:2,7:104,8:9,9:206,10:1
- 36934 multiletter control sequences out of 65536+600000
- 32 fonts using 1955103 bytes
- 102i,8n,101p,407b,799s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/tex
-mf/fonts/opentype/public/lm/lmroman9-regular.otf>{/usr/share/texmf/fonts/enc/dvi
-ps/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sha
-re/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lm
-mi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
-Output written on anime_2.pdf (1 page, 100248 bytes).
+ 423 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 50 glue_spec,
+ 5 attribute_list, 2 write nodes
+   avail lists: 2:535,3:168,4:14,5:37,6:2,7:89,9:92,10:1
+ 35999 multiletter control sequences out of 65536+600000
+ 15 fonts using 723367 bytes
+ 102i,5n,101p,406b,682s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf>
+Output written on hanabi.pdf (1 page, 10429 bytes).
 
-PDF statistics: 198 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
+PDF statistics: 70 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
- 496 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 181 words of extra memory for PDF output out of 10000 (max. 100000000)
 

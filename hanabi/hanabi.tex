@@ -1,0 +1,34 @@
+\documentclass[a4paper]{article}
+\usepackage[papersize={8cm,6cm},margin=0mm,noheadfoot]{geometry}
+\setlength{\parindent}{0pt}
+\usepackage{tikz}
+\usepackage{animate}
+\usepackage{xcolor}
+\begin{document}
+\begin{center}
+    \begin{animateinline}[autoplay,loop]{10} % 10 fps
+        \multiframe{15}{i=1+1}{
+            \begin{tikzpicture}
+                \useasboundingbox (-4,-3) rectangle (4,3);
+                % 黒背景
+                \fill[black] (-4,-3) rectangle (4,3);
+
+                % 打ち上げ軌跡 (前半だけ)
+                \ifnum\i<8
+                    \draw[white, thick] (0,-2.5) -- (0,{-2.5 + \i*0.4});
+                \fi
+
+                % 爆発する花火（放射状）
+                \ifnum\i>5
+                    \pgfmathsetmacro{\t}{\i - 5}
+                    \foreach \a in {0,20,...,340} {
+                            \pgfmathsetmacro{\r}{\t*0.2}
+                            \draw[line width=1pt, color=red!80!yellow]
+                            (0,0) -- (\a:\r);
+                        }
+                \fi
+            \end{tikzpicture}
+        }
+    \end{animateinline}
+\end{center}
+\end{document}

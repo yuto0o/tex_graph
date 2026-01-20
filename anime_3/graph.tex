@@ -1,0 +1,52 @@
+%% platex animate02.tex
+%% dvips animate02.dvi
+%% ps2pdf animate02.ps
+\listfiles
+\documentclass{jarticle}
+\usepackage{pst-3dplot}
+\usepackage{fp}
+\usepackage{animate}
+\usepackage{boxedminipage}
+
+%draws a torus sector
+\newcommand{\torus}[1]{% #1: angle of the torus sector
+  \psset{Beta=20,Alpha=50,linewidth=0.1pt,origin={0,0,0},unit=0.35}%
+  \begin{pspicture}(-12.3,-6.3)(12.3,7)%
+    \parametricplotThreeD[xPlotpoints=100](80,#1)(0,360){%
+      t cos 2 mul 4 u sin 2 mul add mul
+      t sin 2 mul 4 u sin 2 mul add mul
+      u cos 4 mul
+    }%
+    \parametricplotThreeD[yPlotpoints=75](0,360)(80,#1){%
+      u cos 2 mul 4 t sin 2 mul add mul
+      u sin 2 mul 4 t sin 2 mul add mul
+      t cos 4 mul
+    }%
+    \FPupn\strokewidth{360 #1 sub 360 div 3 mul}%
+    \parametricplotThreeD[yPlotpoints=1,linewidth=\strokewidth pt](0,360)(#1,#1){%
+      u cos 2 mul 4 t sin 2 mul add mul
+      u sin 2 mul 4 t sin 2 mul add mul
+      t cos 4 mul
+    }%
+  \end{pspicture}%
+}
+
+\begin{document}
+
+\begin{boxedminipage}{\textwidth}
+    \begin{center}
+        \newcounter{torusangle}
+        \setcounter{torusangle}{80}
+
+        \begin{animateinline}[poster=last,controls,palindrome]{10}%
+            \torus{\thetorusangle}%
+            \whiledo{\thetorusangle<360}{%
+                \newframe%
+                \addtocounter{torusangle}{10}%
+                \torus{\thetorusangle}%
+            }
+        \end{animateinline}%
+    \end{center}
+\end{boxedminipage}
+
+\end{document}

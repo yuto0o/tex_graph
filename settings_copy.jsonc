@@ -1,109 +1,266 @@
 {
-  // 一般設定
-  "editor.formatOnSave": true,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
-  },
-
-  "latex-workshop.formatting.latex": "latexindent",
-
-  "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
-
-  // LaTeX Workshop 設定
-  "latex-workshop.intellisense.package.enabled": true,
-  "latex-workshop.view.pdf.viewer": "tab",
-  // "latex-workshop.latex.outDir": ".tex_temp",  // 出力ディレクトリを指定
-  "latex-workshop.latex.outDir": "./", // PDF 出力を .tex と同じ場所に
-
-  "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
-  "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
-  "latex-workshop.latex.autoBuild.run": "onSave",
-  "latex-workshop.synctex.afterBuild.enabled": true,
-  "latex-workshop.latex.recipe.default": "latexmk (build & clean)",
-
-  // レシピ（ビルド後に中間ファイルを削除）
-  "latex-workshop.latex.recipes": [
-    {
-      "name": "latexmk (build & clean)",
-      "tools": ["latexmk-build", "latexmk-clean"]
-    }
-  ],
-
-  // ビルド＆クリーン用ツール定義
-  "latex-workshop.latex.tools": [
-    {
-      "name": "latexmk-build",
-      "command": "wsl.exe",
-      "args": ["latexmk", "-lualatex", "-time", "%DOCFILE%.tex"]
+    // 一般設定
+    "editor.formatOnSave": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 4,
+        "prettier.tabWidth": 4,
     },
-    {
-      "name": "latexmk-clean",
-      "command": "wsl.exe",
-      "args": ["sh", "-c", "find .tex_temp -type f ! -name '*.log' -delete"]
-    }
-  ],
 
-  // LaTeX エディタ設定
-  "[latex]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 4,
+        "prettier.tabWidth": 4,
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+    },
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit",
+        },
+    },
+    "[dart]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "Dart-Code.dart-code",
+        "editor.inlayHints.enabled": "offUnlessPressed",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.formatOnPaste": true,
+    },
 
-    "editor.wordWrap": "on",
-    "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?゠・，、；：！？．。‘’“”（）｟｠［］〚〛〔〕｛｝〈〉《》「」『』【】〖〗〝〟がてでとにのはへもやを",
-    "editor.unicodeHighlight.invisibleCharacters": true,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.language.colorizedBracketPairs": [
-      ["‘", "’"],
-      ["“", "”"],
-      ["(", ")"],
-      ["（", "）"],
-      ["｟", "｠"],
-      ["[", "]"],
-      ["［", "］"],
-      ["〚", "〛"],
-      ["〔", "〕"],
-      ["{", "}"],
-      ["｛", "｝"],
-      ["〈", "〉"],
-      ["《", "》"],
-      ["「", "」"],
-      ["『", "』"],
-      ["【", "】"],
-      ["〖", "〗"],
-      ["〝", "〟"]
+    "latex-workshop.formatting.latex": "latexindent",
+
+    "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
+
+    // LaTeX Workshop 設定
+    "latex-workshop.intellisense.package.enabled": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    // "latex-workshop.latex.outDir": ".tex_temp",  // 出力ディレクトリを指定
+    "latex-workshop.latex.outDir": "./", // PDF 出力を .tex と同じ場所に
+
+    "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.latex.recipe.default": "latexmk (build & clean)",
+
+    // レシピ（ビルド後に中間ファイルを削除）
+    // "latex-workshop.latex.recipes": [
+    //   {
+    //     "name": "latexmk (build & clean)",
+    //     "tools": ["latexmk-build", "latexmk-clean"]
+    //   }
+    // ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk (build & clean)",
+            "tools": ["latexmk-lualatex", "latexmk-clean"],
+        },
+        {
+            "name": "latexmk (platex)",
+            "tools": ["latexmk-platex"],
+        },
+        {
+            "name": "latexmk (platex -> dvips -> ps2pdf)",
+            "tools": ["platex", "dvips", "ps2pdf"],
+        },
+        {
+            "name": "latexmk (pdflatex)",
+            "tools": ["latexmk-pdflatex"],
+        },
     ],
-    "editor.unicodeHighlight.ambiguousCharacters": true,
-    "editor.unicodeHighlight.allowedCharacters": {
-      "゠": true,
-      "，": true,
-      "；": true,
-      "：": true,
-      "！": true,
-      "？": true,
-      "．": true,
-      "‘": true,
-      "’": true,
-      "（": true,
-      "）": true,
-      "［": true,
-      "］": true,
-      "｛": true,
-      "｝": true,
-      "〔": true,
-      "〕": true,
-      "＜": true,
-      "＞": true,
-      "ノ": true
-    }
-  }
+
+    // ビルド＆クリーン用ツール定義
+    // "latex-workshop.latex.tools": [
+    //   {
+    //     "name": "latexmk-build",
+    //     "command": "wsl.exe",
+    //     "args": ["latexmk", "-lualatex", "-time", "%DOCFILE%.tex"]
+    //   },
+    //   {
+    //     "name": "latexmk-clean",
+    //     "command": "wsl.exe",
+    //     "args": ["sh", "-c", "find .tex_temp -type f ! -name '*.log' -delete"]
+    //   }
+    // ],
+
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk-lualatex",
+            "command":
+                // "wsl.exe",
+                "latexmk",
+            "args": [
+                // "latexmk",
+                "-interaction=nonstopmode",
+                "-halt-on-error",
+                "-lualatex",
+                "-time",
+                "%DOCFILE%.tex",
+            ],
+        },
+        {
+            "name": "latexmk-clean",
+            "command":
+                // "wsl.exe",
+                // "latexmk",
+                "rm",
+            "args": [
+                // "sh",
+                // "-c",
+                // "find .tex_temp -type f ! -name '*.log' -delete"
+                "-rf",
+                ".tex_temp",
+            ],
+        },
+        {
+            "name": "latexmk-platex",
+            "command":
+                // "wsl.exe",
+                "latexmk",
+            "args": [
+                // "latexmk",
+                "-interaction=nonstopmode",
+                "-halt-on-error",
+                "in",
+                "-e",
+                "$latex=q/platex/",
+                "-e",
+                "$dvipdf=q/dvipdfmx/",
+                "-pdfdvi",
+                "%DOCFILE%.tex",
+            ],
+        },
+        {
+            "name": "platex",
+            "command":
+                // "wsl.exe",
+                // "latexmk",
+                "platex",
+            "args": [
+                // "platex",
+                "-interaction=nonstopmode",
+                "-halt-on-error",
+                "%DOCFILE%.tex",
+            ],
+        },
+        {
+            "name": "dvips",
+            "command":
+                // "wsl.exe",
+                // "latexmk",
+                "divps",
+            "args": [
+                // "dvips",
+                "%DOCFILE%.dvi",
+            ],
+        },
+        {
+            "name": "ps2pdf",
+            "command":
+                // "wsl.exe",
+                // "latexmk",
+                "ps2pdf",
+            "args": [
+                // "ps2pdf",
+                "%DOCFILE%.ps",
+            ],
+        },
+        {
+            "name": "latexmk-pdflatex",
+            "command":
+                // "wsl.exe",
+                "latexmk",
+            "args": [
+                // "latexmk",
+                "-interaction=nonstopmode",
+                "-halt-on-error",
+                "-pdf",
+                "%DOCFILE%.tex",
+            ],
+        },
+    ],
+
+    // LaTeX エディタ設定
+    "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
+
+        "editor.wordWrap": "on",
+        "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?゠・，、；：！？．。‘’“”（）｟｠［］〚〛〔〕｛｝〈〉《》「」『』【】〖〗〝〟がてでとにのはへもやを",
+        "editor.unicodeHighlight.invisibleCharacters": true,
+        "editor.bracketPairColorization.enabled": true,
+        "editor.language.colorizedBracketPairs": [
+            ["‘", "’"],
+            ["“", "”"],
+            ["(", ")"],
+            ["（", "）"],
+            ["｟", "｠"],
+            ["[", "]"],
+            ["［", "］"],
+            ["〚", "〛"],
+            ["〔", "〕"],
+            ["{", "}"],
+            ["｛", "｝"],
+            ["〈", "〉"],
+            ["《", "》"],
+            ["「", "」"],
+            ["『", "』"],
+            ["【", "】"],
+            ["〖", "〗"],
+            ["〝", "〟"],
+        ],
+        "editor.unicodeHighlight.ambiguousCharacters": true,
+        "editor.unicodeHighlight.allowedCharacters": {
+            "゠": true,
+            "，": true,
+            "；": true,
+            "：": true,
+            "！": true,
+            "？": true,
+            "．": true,
+            "‘": true,
+            "’": true,
+            "（": true,
+            "）": true,
+            "［": true,
+            "］": true,
+            "｛": true,
+            "｝": true,
+            "〔": true,
+            "〕": true,
+            "＜": true,
+            "＞": true,
+            "ノ": true,
+        },
+    },
+    "latex-workshop.formatting.latexindent.path": "latexindent",
+    "latex-workshop.formatting.latexindent.args": [
+        "%TMPFILE%",
+        "-c=%DIR%/",
+        "-y=defaultIndent: '%INDENT%'",
+    ],
+    "python.languageServer": "Pylance",
+    "editor.semanticHighlighting.enabled": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.languageServerMode": "light",
 }
